@@ -1,6 +1,6 @@
 const { readFile } = require('fs');
 
-function readDatabase(file) {
+function readDatabase (file) {
   const students = {};
   return new Promise((resolve, reject) => {
     readFile(file, (err, data) => {
