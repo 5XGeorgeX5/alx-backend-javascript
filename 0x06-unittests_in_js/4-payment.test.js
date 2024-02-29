@@ -5,7 +5,7 @@ const Utils = require('./utils');
 
 describe('sendPaymentRequestToApi', () => {
   it('should use Utils.calculateNumber with type SUM and return 10', () => {
-    const calculateNumberSpy = sinon.spy(console, 'log');
+    const calculateNumberSpy = sinon.stub(console, 'log');
     const calculateNumberStub = sinon
       .stub(Utils, 'calculateNumber')
       .returns(10);
